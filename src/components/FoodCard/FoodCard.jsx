@@ -2,20 +2,18 @@ import styles from "./FoodCard.module.css";
 import { formatMoney } from "../../util/formatMoney";
 import Button from "../Button/Button";
 
-export default function FoodCard() {
+export default function FoodCard({ img, name, restaurant, price }) {
   return (
     <div className={styles.foodCardContainer}>
-      <img
-        className={styles.image}
-        src="https://www.dibafar.com/wp-content/uploads/2023/06/a688ae1d-75de-4508-974c-aeae001b7b8e-%D9%82%D9%88%D8%B1%D9%85%D9%87-%D8%B3%D8%A8%D8%B2%DB%8C.jpg"
-        alt="food image"
-      />
+      <img className={styles.image} src={img} alt="food image" />
 
       <div className={styles.content}>
-        <h3>عنوان غذا</h3>
-        <p>اسم رستوران</p>
-        <p style={{ fontWeight: "bold" }}>{formatMoney(200000)}</p>
-        <Button style={{ padding: "1rem 2rem" }}>سفارش</Button>
+        <h3>{name}</h3>
+        <p>{restaurant}</p>
+        <div style={{display:"flex"}}>
+          <Button style={{ padding: "1rem 2rem", marginLeft:"3.7rem" }}>سفارش</Button>
+          <p style={{ fontWeight: "bold"}}>{formatMoney(price)}</p>
+        </div>
       </div>
     </div>
   );

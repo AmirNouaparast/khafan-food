@@ -1,0 +1,36 @@
+.totalCost {
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .totalCost {
+    width: 90%;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .totalCost {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .totalCost {
+    width: 80%;
+    font-size: medium;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .totalCost {
+    width: 60%;
+    font-size: medium;
+    font-weight: 500;
+  }
+}
