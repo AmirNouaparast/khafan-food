@@ -4,6 +4,7 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto 1rem;
   background-color: var(--main-primary-color);
   color: white;
@@ -11,7 +12,7 @@
 
 @media only screen and (max-width: 800px) {
   .orderCard {
-    width: 80%;
+    width: 90%;
     font-size: small;
     font-weight: 500;
   }
@@ -23,16 +24,17 @@
 }
 @media only screen and (min-width: 800px) {
   .orderCard {
-    width: 60%;
-    font-size: medium;
-    font-weight: 500;
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .orderCard {
+    width: 65%;
   }
 }
 @media only screen and (min-width: 1200px) {
   .orderCard {
-    width: 40%;
-    font-size: medium;
-    font-weight: 500;
+    width: 50%;
   }
 }
 

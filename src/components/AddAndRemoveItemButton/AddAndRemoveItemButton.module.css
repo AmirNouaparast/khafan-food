@@ -1,0 +1,18 @@
+.action {
+  display: inline;
+}
+
+.button {
+  padding: 0.6rem 1.1rem;
+}
+@media only screen and (max-width: 450px) {
+  .button {
+    padding: 0.4rem 0.8rem;
+    font-size: small;
+  }
+}
+.actionNumberOfItems {
+  font-weight: bold;
+  display: inline;
+  margin: 0 0.8rem;
+}

@@ -3,10 +3,10 @@ import styles from "./Button.module.css";
 function Button(props) {
   const {
     style,
-    claasName,
+    className,
     size,
     variant,
-    onclick,
+    onClick,
     disabled,
     color,
     fullwidthOnMobile,
@@ -23,10 +23,10 @@ function Button(props) {
         " " +
         (fullwidthOnMobile ? styles.fullwidthOnMobile : "") +
         " " +
-        claasName
+        className
       }
       disabled={disabled}
-      onclick={onclick}
+      onClick={onClick}
       type={type}
       style={{
         ...style,
