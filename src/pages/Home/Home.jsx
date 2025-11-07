@@ -1,15 +1,17 @@
-import styles from './Home.module.css'
-import Main from '../../components/Main/Main'
-import {foods} from '../../foods'
-import FoodCard from '../../components/FoodCard/FoodCard'
+import styles from "./Home.module.css";
+import Main from "../../components/Main/Main";
+import { foods } from "../../foods";
+import FoodCard from "../../components/FoodCard/FoodCard";
 
 function Home() {
+
   return (
     <Main>
       <div className={styles.foodCardList}>
         {foods.map((food) => (
           <div className={styles.foodCardItem} key={food.id}>
             <FoodCard
+              id={food.id}
               name={food.name}
               price={food.price}
               restaurant={food.restaurant}
@@ -17,10 +19,9 @@ function Home() {
             />
           </div>
         ))}
-        
       </div>
     </Main>
-  )
+  );
 }
 
-export default Home
+export default Home;
