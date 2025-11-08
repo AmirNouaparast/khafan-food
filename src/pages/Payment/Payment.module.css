@@ -1,0 +1,64 @@
+.container {
+  margin: 1rem auto;
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 1px 1px 20px #ccc;
+}
+.dateContainer {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  column-gap: 70px;
+}
+.passwordContainer {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  column-gap: 60px;
+  margin-bottom: 2rem;
+}
+.button {
+  height: 70px;
+  width: 120%;
+  margin-top: 2.7rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+  .passwordContainer {
+    grid-template-columns: 45% 35%;
+    column-gap: 50px;
+  }
+  .dateContainer {
+    grid-template-columns: 30% 30%;
+  }
+  .button {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .container {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 30%;
+  }
+}
+
+.numberInput {
+  -moz-appearance: textfield;
+}
+
+/* Hide the arrows/spinner in WebKit browsers (Chrome, Safari, Edge) */
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
