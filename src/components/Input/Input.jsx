@@ -7,10 +7,14 @@ function Input(props) {
     type,
     className,
     error,
-    errorMassage,
+    errorMessage,
     required,
     dir,
     style,
+    value,
+    onChange,
+    onBlur,
+    ...rest
   } = props;
 
   return (
@@ -23,10 +27,14 @@ function Input(props) {
       </label>
       <br />
       <input
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
         style={style}
         dir={dir}
         required={required}
         type={type}
+        {...rest}
         id={label}
         className={
           styles.input +
@@ -38,7 +46,7 @@ function Input(props) {
       />
       {error && (
         <span className={styles.errorMessage}>
-          {errorMassage || "مقدار درست را وارد کنید"}
+          {errorMessage || "مقدار درست را وارد کنید"}
         </span>
       )}
     </div>
