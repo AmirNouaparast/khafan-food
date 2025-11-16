@@ -1,10 +1,15 @@
 import styles from "./Payment.module.css";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useInoutValidator from "../../util/useInoutValidator";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { formatMoney } from "../../util/formatMoney";
+import { AppContext } from "../../appContext";
 
 function Payment() {
+  const { clearCart, toggleNotification } = useContext(AppContext);
+
   const cartNumberInputState = useInoutValidator({
     maxLength: 16,
     minLength: 16,
@@ -31,6 +36,7 @@ function Payment() {
     required: false,
     onlyNumbers: false,
   });
+  const navigate = useNavigate();
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -60,12 +66,19 @@ function Payment() {
     ) {
       return;
     }
-    console.log("form is valid")
+    clearCart();
+    toggleNotification({ type: "success", message: "سفارش ثبت شد ، آماده شین برا یه تجربه خفن" });
+    navigate("/");
   };
+
+  const [searchParams] = useSearchParams();
+  const amount = searchParams.get("amount") || "0";
 
   return (
     <form className={styles.container} onSubmit={formSubmitHandler}>
-      <h1 style={{ textAlign: "center" }}>مبلغ قابل پرداخت</h1>
+      <h1 style={{ textAlign: "center" }}>
+        مبلغ قابل پرداخت : {formatMoney(amount)}
+      </h1>
 
       <Input
         label={"شماره کارت"}

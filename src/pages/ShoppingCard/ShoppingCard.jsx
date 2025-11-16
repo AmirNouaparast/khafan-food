@@ -18,6 +18,7 @@ function ShoppingCard() {
     totalCostFromStart += food.price * item.count;
     totalItemCount += item.count;
   });
+  const finalyTotal = totalCostFromStart + 20000
 
   if (cart.length === 0) {
     return (
@@ -42,7 +43,7 @@ function ShoppingCard() {
           <h3>تعداد اقلام</h3>
           <p>{totalItemCount + " عدد "}</p>
           <h3>قابل پرداخت</h3>
-          <p>{formatMoney(totalCostFromStart + 20000)}</p>
+          <p>{formatMoney(finalyTotal)}</p>
         </div>
         <div>
           <h3>جمع سفارش</h3>
@@ -56,7 +57,7 @@ function ShoppingCard() {
 
       <div>
         <Link
-          to="/payment"
+          to={`/payment?amount=${finalyTotal}`}
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <Button

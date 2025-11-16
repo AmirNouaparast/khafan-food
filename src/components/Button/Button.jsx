@@ -43,6 +43,7 @@ function Button(props) {
             : size === "big"
             ? "1.5rem 3rem"
             : undefined,
+        cursor: "pointer",
       }}
     >
       {children}
