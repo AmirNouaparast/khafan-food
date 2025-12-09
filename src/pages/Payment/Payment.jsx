@@ -67,7 +67,10 @@ function Payment() {
       return;
     }
     clearCart();
-    toggleNotification({ type: "success", message: "سفارش ثبت شد ، آماده شین برا یه تجربه خفن" });
+    toggleNotification({
+      type: "success",
+      message: "سفارش ثبت شد ، آماده شین برا یه تجربه خفن",
+    });
     navigate("/");
   };
 

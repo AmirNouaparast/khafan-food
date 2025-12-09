@@ -4,7 +4,6 @@ import { foods } from "../../foods";
 import FoodCard from "../../components/FoodCard/FoodCard";
 
 function Home() {
-
   return (
     <Main>
       <div className={styles.foodCardList}>

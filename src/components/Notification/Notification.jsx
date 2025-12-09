@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
 import styles from "./Notification.module.css";
 
-function Notification({message, type}) {
+function Notification({ message, type }) {
   return createPortal(
     <div
       className={styles.notification}

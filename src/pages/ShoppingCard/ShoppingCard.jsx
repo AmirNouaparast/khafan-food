@@ -18,7 +18,7 @@ function ShoppingCard() {
     totalCostFromStart += food.price * item.count;
     totalItemCount += item.count;
   });
-  const finalyTotal = totalCostFromStart + 20000
+  const finalyTotal = totalCostFromStart + 20000;
 
   if (cart.length === 0) {
     return (

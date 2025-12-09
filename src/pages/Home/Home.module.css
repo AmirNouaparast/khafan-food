@@ -1,29 +1,27 @@
-
 .foodCardList {
-    display: grid;
+  display: grid;
 }
 @media only screen and (max-width: 750px) {
-    .foodCardList {
-        grid-template-columns: auto;
-    }
+  .foodCardList {
+    grid-template-columns: auto;
+  }
 }
 @media only screen and (min-width: 750px) {
-    .foodCardList {
-        grid-template-columns: auto auto;
-    }
+  .foodCardList {
+    grid-template-columns: auto auto;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    .foodCardList {
-        grid-template-columns: auto auto auto;
-    }
+  .foodCardList {
+    grid-template-columns: auto auto auto;
+  }
 }
 @media only screen and (min-width: 1600px) {
-    .foodCardList {
-        grid-template-columns: auto auto auto auto;
-    }
+  .foodCardList {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
-
 .foodCardItem {
-    margin: 1rem auto;
+  margin: 1rem auto;
 }

@@ -13,7 +13,6 @@
   display: grid;
   grid-template-columns: 50% 30%;
   column-gap: 60px;
-
 }
 .button {
   height: 70px;

@@ -14,7 +14,7 @@ export default function AppContextProvider({ children }) {
 
       return () => clearTimeout(notificationTimeout);
     }
-  },[notification]);
+  }, [notification]);
 
   const addToCart = (id) => {
     setCart((prevState) => {

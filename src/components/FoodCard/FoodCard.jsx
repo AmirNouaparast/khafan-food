@@ -33,10 +33,7 @@ export default function FoodCard({ id, img, name, restaurant, price }) {
               سفارش
             </Button>
           ) : (
-            <AddAndRemoveItem
-              id={id}
-              count={count}
-            />
+            <AddAndRemoveItem id={id} count={count} />
           )}
           <p style={{ fontWeight: "bold" }}>{formatMoney(price)}</p>
         </div>

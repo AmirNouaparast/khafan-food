@@ -12,7 +12,7 @@
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 .navbarLinkButton {
@@ -22,7 +22,34 @@
   margin-right: 0.5rem;
 }
 
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 0.6rem;
+}
+
+.button {
+  margin-top: 1.4rem;
+}
+
 .navbarLinkButton:hover {
   background-color: #ccc;
   box-shadow: 2px 1px 1px black;
+}
+
+@media screen and (max-width: 640px) {
+  .navbarMain {
+    font-size: 24px;
+  }
+  .logo {
+    width: 57px;
+    height: 57px;
+    margin-top: 0.4rem;
+  }
+  .navbarContainer {
+    margin: 0 0.8rem;
+  }
+  .button {
+    margin-top: 0.8rem;
+  }
 }
