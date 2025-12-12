@@ -1,7 +1,7 @@
 .foodCardContainer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
-  width: 300px;
+  width: 285px;
 }
 
 .image {
@@ -13,12 +13,19 @@
 }
 
 .content {
-  padding: 1rem;
+  padding: 0 0.8rem 0.7rem;
   text-align: center;
 }
 
-.actionAndPrice {
-  width: 100%;
+.order{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.orderButton{
+   padding: 0.8rem 1.4rem;
+    margin-left: 4.5rem;
+    font-size: 15px;
+
 }

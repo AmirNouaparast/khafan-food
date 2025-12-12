@@ -7,49 +7,34 @@
   border-radius: 0 0 30px 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: var(--main-dark-color);
+  height: 72px;
 }
 
 .navbarContainer {
   display: flex;
-  justify-content: space-between;
-  margin: 0 2rem;
-}
-
-.navbarLinkButton {
-  border-radius: 30px;
-  padding: 0.5rem 1rem;
-  margin-top: 0.8rem;
-  margin-right: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: -0.6rem -5rem;
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
-  margin-top: 0.6rem;
-}
-
-.button {
-  margin-top: 1.4rem;
-}
-
-.navbarLinkButton:hover {
-  background-color: #ccc;
-  box-shadow: 2px 1px 1px black;
+  width: 65px;
+  height: 65px;
 }
 
 @media screen and (max-width: 640px) {
   .navbarMain {
-    font-size: 24px;
+    font-size: 25px;
   }
   .logo {
     width: 57px;
     height: 57px;
-    margin-top: 0.4rem;
   }
   .navbarContainer {
-    margin: 0 0.8rem;
+    margin: -0.2rem 0.8rem;
+    justify-content: space-between;
   }
-  .button {
-    margin-top: 0.8rem;
+  .navbar {
+    height: 64px;
   }
 }

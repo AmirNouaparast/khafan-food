@@ -21,7 +21,7 @@ function Navbar() {
         <img src={logo} alt="logo" className={styles.logo} />
         <div>
           <Link to="/shopping-card">
-            <Button size="small" variant="outlined" className={styles.button}>
+            <Button size="small" variant="outlined">
               سبدخرید {count > 0 && count}
             </Button>
           </Link>

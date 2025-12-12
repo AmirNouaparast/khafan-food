@@ -18,16 +18,10 @@ export default function FoodCard({ id, img, name, restaurant, price }) {
       <div className={styles.content}>
         <h3>{name}</h3>
         <p>{restaurant}</p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
+        <div className={styles.order}>
           {count === 0 ? (
             <Button
-              style={{ padding: "1rem 2rem", marginLeft: "3.7rem" }}
+              className={styles.orderButton}
               onClick={() => addToCart(id)}
             >
               سفارش
