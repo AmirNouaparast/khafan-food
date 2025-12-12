@@ -79,9 +79,9 @@ function Payment() {
 
   return (
     <form className={styles.container} onSubmit={formSubmitHandler}>
-      <h1 style={{ textAlign: "center" }}>
+      <h2 style={{ textAlign: "center", margin: "0 0 2rem" }}>
         مبلغ قابل پرداخت : {formatMoney(amount)}
-      </h1>
+      </h2>
 
       <Input
         label={"شماره کارت"}

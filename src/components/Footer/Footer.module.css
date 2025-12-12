@@ -1,5 +1,5 @@
 .footer {
-  height: 170px;
+  height: 130px;
   width: 100%;
   border-radius: 30px 30px 0 0;
   background-color: var(--main-primary-color);
@@ -8,20 +8,25 @@
 }
 
 .footerContainer {
-  padding: 1rem;
+  margin: 0 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .image {
-  margin-left: 2rem;
-  width: 140px;
-  height: 140px;
+  margin-top: 0.3rem;
+  width: 120px;
+  height: 120px;
 }
 
 @media only screen and (max-width: 600px) {
   .image {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+  }
+  .footer {
+  height: 110px;
+  font-size: 14px;
   }
 }

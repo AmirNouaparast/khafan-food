@@ -1,5 +1,7 @@
 .action {
   display: inline;
+  background-color: rgba(23, 92, 139, 0.256);
+  border-radius: 50px;
 }
 
 .button {

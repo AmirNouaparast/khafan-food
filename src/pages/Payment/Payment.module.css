@@ -1,13 +1,16 @@
 .container {
   margin: 1rem auto;
   border-radius: 30px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   box-shadow: 1px 1px 20px #ccc;
+  text-align: center;
 }
 .dateContainer {
-  display: grid;
-  grid-template-columns: 20% 20%;
-  column-gap: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 rem;
 }
 .passwordContainer {
   display: grid;
@@ -15,9 +18,9 @@
   column-gap: 60px;
 }
 .button {
-  height: 70px;
+  height: 60px;
   width: 120%;
-  margin-top: 2.7rem;
+  margin-top: 1.8rem;
 }
 
 @media only screen and (max-width: 650px) {
@@ -53,6 +56,8 @@
 
 .numberInput {
   -moz-appearance: textfield;
+  height: 16px;
+  margin: -0.8rem -4rem 0;
 }
 
 /* Hide the arrows/spinner in WebKit browsers (Chrome, Safari, Edge) */

@@ -55,19 +55,24 @@ function ShoppingCard() {
         </div>
       </section>
 
-      <div>
+      <div
+        style={{
+          margin: "3rem 33%",
+        }}
+      >
         <Link
           to={`/payment?amount=${finalyTotal}`}
-          style={{ textDecoration: "none", color: "inherit" }}
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+          }}
         >
           <Button
             color={"green"}
             fullWidthOnMobile
             style={{
-              padding: "1rem 2rem",
-              marginTop: "2rem",
-              display: "block",
-              width: "30%",
+              padding: "0.8rem 0",
+              width: "100%",
             }}
             type={"button"}
           >

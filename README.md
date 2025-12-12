@@ -3,7 +3,9 @@
 A full-featured **online food ordering web app** built with **React 18**, focusing on **great UX, clean code, and fast performance**.  
 (No external UI frameworks — everything handcrafted and lightweight!)
 
+
 ---
+
 
 ## 📑 Table of Contents
 
@@ -17,7 +19,9 @@ A full-featured **online food ordering web app** built with **React 18**, focusi
 - [Screenshots](#screenshots)
 - [Author](#author)
 
+
 ---
+
 
 ## 🏠 About the Project
 
@@ -31,15 +35,27 @@ A full-featured **online food ordering web app** built with **React 18**, focusi
 
 **Project goal:** Demonstrate mastery of React, global state management, custom hooks, routing, and professional UX — using only React core tools.
 
----
 
 ---
+
 
 ## 🔗 Live Demo
 
-[View Live Demo](https://your-live-demo-link.com)
+[View Live Demo](https://melodic-frangipane-50c1eb.netlify.app/)
+
 
 ---
+
+
+## 🖼 Screenshots
+
+|                Home Page                |                  Shopping Page                  |               Payment Page               |
+|-----------------------------------------|-------------------------------------------------|------------------------------------------|
+| ![Home Page](Screenshots/home-page.png) | ![Shopping Page](Screenshots/shopping-page.png) | ![Payment Page](Screenshots/payment-page.png) |
+
+
+---
+
 
 ## ✨ Features
 
@@ -53,7 +69,9 @@ A full-featured **online food ordering web app** built with **React 18**, focusi
 - Custom 404 page
 - Reusable components (Button, Input, AddAndRemoveItem, etc.)
 
+
 ---
+
 
 ## 🧩 Tech Stack
 
@@ -68,7 +86,9 @@ A full-featured **online food ordering web app** built with **React 18**, focusi
 
 _No extra UI libraries — pure React!_
 
+
 ---
+
 
 ## ⚙️ Installation
 
@@ -82,10 +102,16 @@ npm install
 
 # Run development server
 npm start
+```
 Open your browser at: http://localhost:3000
 
-📂 Project Structure
 
+---
+
+
+## 📂 Project Structure
+
+```bash
 src/
 ├── components/ # Reusable UI components
 ├── pages/ # Main pages (Home, Cart, Payment, NotFound)
@@ -94,8 +120,12 @@ src/
 ├── appContext.jsx # Context + cart logic
 ├── App.jsx # Routing
 └── index.js # App rendering
+```
 
-💡 Highlights for Interviews
+---
+
+
+## 💡 Highlights for Interviews
 
 Smart use of JSON.parse(JSON.stringify()) for deep copy in Context (prevents direct mutation)
 Custom hook useInputValidator with full configuration (min/max length, onlyNumbers, required, etc.)
@@ -104,16 +134,13 @@ Automatic price formatting (250000 → 250,000 Toman)
 Highly flexible Button component (size, variant, color, fullWidthOnMobile, etc.)
 Excellent mobile UX (large buttons, proper spacing, trash icon for single items)
 
-## 🖼 Screenshots
 
-| Home Page | Shopping Page | Payment Page |
-|-----------|---------------|--------------|
-| ![Home Page](Screenshots/home-page.png) | ![Shopping Page](Screenshots/shopping-page.png) | ![Payment Page](Screenshots/payment.png) |
+---
 
 
-👨‍💻 Author
-Amir Nouaparast
-GitHub: [Amir Nouaparast](https://github.com/AmirNouaparast)
+## 👨‍💻 Author
+
+Amir Nouaparast  
+GitHub: [Amir Nouaparast](https://github.com/AmirNouaparast)  
 Frontend Developer | React Enthusiast | Lover of Clean Code & Strong Coffee ☕
 
-```
