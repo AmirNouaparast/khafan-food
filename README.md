@@ -7,22 +7,6 @@ A full-featured **online food ordering web app** built with **React 18**, focusi
 ---
 
 
-## 📑 Table of Contents
-
-- [About the Project](#about-the-project)
-- [View Live Demo](#View-live-demo)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Highlights for Interviews](#highlights-for-interviews)
-- [Screenshots](#screenshots)
-- [Author](#author)
-
-
----
-
-
 ## 🏠 About the Project
 
 **Khafan Food** is a complete online food ordering platform where users can:
